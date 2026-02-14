@@ -1,0 +1,13 @@
+example/
+sorted_data/
+data/
+features/
+result/
+*.tsv
+*.csv
+*.pdf
+
+# Ignore the virtual environment
+c_env/
+__pycache__/
+.DS_Store
