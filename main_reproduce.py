@@ -9,7 +9,7 @@ from CACAE.Survive_select import survive_select
 warnings.filterwarnings("ignore")
 
 # 1. Setup Project Constants
-cancer_name = "LGG"
+cancer_name = "LGG" # Change this variable to analyze a different cancer type (e.g., "BRCA", "LUAD", etc.)
 
 # Create necessary directories
 for folder in ['sorted_data', 'features', 'result']:
