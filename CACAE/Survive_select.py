@@ -15,6 +15,7 @@ def survive_select(survive_data, data, p_thresh, lasso_alpha=0.05):
     lasso.fit(scaled_data, time_col)
 
     selected_features_indices = [i for i, coef in enumerate(lasso.coef_) if coef != 0]
+    print(f"Features after Lasso: {len(selected_features_indices)}")
 
     selected_features = []
 
@@ -30,5 +31,6 @@ def survive_select(survive_data, data, p_thresh, lasso_alpha=0.05):
     selected_data = data.iloc[:, selected_features]
 
     selected_data.index = data.index
+    print(f"Features after P-value test: {len(selected_features)}")
 
     return selected_data
