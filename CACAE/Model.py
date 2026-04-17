@@ -133,7 +133,8 @@ class CACAE:
 
     def extract_feature(self, x):
         # Get a Keras backend function that extracts the output of the 'HiddenLayer' layer given an input
-        f = tf.keras.backend.function(self.model.input, self.model.get_layer('HiddenLayer').output)
+        intermediate_model = tf.keras.Model(inputs=self.model.inputs, outputs=self.model.get_layer('HiddenLayer').output)
+        f = intermediate_model
         # Reshape the input data to the expected shape
         x = tf.reshape(x, [-1, 1, x.shape[1], 1])
         # Use the backend function to extract the hidden layer output for the input data

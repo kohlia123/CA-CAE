@@ -5,7 +5,6 @@ __author__ = "Amrita Kohli, Riya Bharamaraddi, & Tamara Hadzic"
 
 # General utils
 from argparse import ArgumentParser
-from pathlib import Path
 import os
 import warnings
 
