@@ -3,6 +3,8 @@ All multi-omics data is sourced from the UCSC Xena Datahub. You can find direct 
 
 The data for additional cancers used in this project that are not in the original study can be found at the following links
 - [ESCA](https://xenabrowser.net/datapages/?cohort=TCGA%20Esophageal%20Cancer%20(ESCA)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443)
+- [KIRP](https://xenabrowser.net/datapages/?cohort=GDC%20TCGA%20Kidney%20Papillary%20Cell%20Carcinoma%20(KIRP)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443)
+- [LIHC](https://xenabrowser.net/datapages/?cohort=TCGA%20Liver%20Cancer%20(LIHC)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443)
 
 **How to Run**
 1. Environment Setup: On the SCC, load Python 3.9+ module and install requirements. Before running the model on the SCC, make sure to use a node with a GPU.
