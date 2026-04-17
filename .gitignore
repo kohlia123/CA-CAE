@@ -8,3 +8,4 @@ data/
 c_env/
 __pycache__/
 .DS_Store
+.venv/
