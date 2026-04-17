@@ -27,12 +27,10 @@ For your chosen cancer type (e.g., LGG), download the mRNA, miRNA, Methylation, 
 - LGG_METH.tsv
 - LGG_sur.tsv
    
-3. Configuration: Open main_reproduce.py and update the cancer_name variable (Line 12) to match your data prefix     (e.g., cancer_name = "LGG").
-
-4. Execution: Run the script with the following command
+3. Execution: Run the script with the following command
    ```bash
-   python main_reproduce.py
+   python main_reproduce.py --cancer <CANCER_TYPE_HERE>
    
-5. Outputs
+4. Outputs
    - Significant features from the Lasso-Cox setup are saved in /features.
    - Visualizations: Kaplan-Meier survival plots (.pdf) and cluster assignments (.csv) are saved in /result.
