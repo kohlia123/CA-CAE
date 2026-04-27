@@ -16,10 +16,15 @@ For your chosen cancer type (e.g., LGG), download the mRNA, miRNA, Methylation, 
    
 3. Configuration: Open main_reproduce.py and update the cancer_name variable (Line 12) to match your data prefix     (e.g., cancer_name = "LGG").
 
-4. Execution: Run the script with the following command
+4. Execution: Run the scripts with the following commands:
+
    ```bash
+   # Reproduce the original CA-CAE pipeline
    python main_reproduce.py
+
+   # Run the extended model (Standard Autoencoder + RSF feature selection)
+   python main_new.py
    
 5. Outputs
-   - Significant features from the Lasso-Cox setup are saved in /features.
-   - Visualizations: Kaplan-Meier survival plots (.pdf) and cluster assignments (.csv) are saved in /result.
+   - Significant features from the Lasso-Cox setup are saved in /features for the reproduced model, and /features_new for the extension model.
+   - Visualizations: Kaplan-Meier survival plots (.pdf) and cluster assignments (.csv) are saved in /result for the reproduced result, and    /result_new for the extension result.
