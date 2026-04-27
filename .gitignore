@@ -7,4 +7,7 @@ data/
 # Ignore the virtual environment
 c_env/
 __pycache__/
+venv/
+venv.bak
+env/
 .DS_Store
