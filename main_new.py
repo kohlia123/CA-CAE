@@ -9,7 +9,7 @@ from CACAE.Survive_select_new import survive_select
 warnings.filterwarnings("ignore")
 
 # 1. Setup Project Constants
-cancer_name = "SARC" 
+cancer_name = "LUSC" 
 
 # Create necessary directories - Updated to include result_new and features_new
 for folder in ['sorted_data', 'result_new', 'features_new']:
@@ -91,8 +91,8 @@ SURVIVE_SELECT.to_csv(os.path.join('features_new', f'{cancer_name}_features.csv'
 # 9. Clustering and Evaluation
 print("Performing K-Means clustering...")
 cp = ClusterProcessor(SURVIVE_SELECT, survive)
-cp.compute_indexes(3) # Change as needed for each cancer type
-p_value, clusters = cp.LogRankp(3) # Adjust to match compute_indexes
+cp.compute_indexes(2) # Change as needed for each cancer type
+p_value, clusters = cp.LogRankp(2) # Adjust to match compute_indexes
 
 # 10. Generate Final Visualizations
 do_km_plot(survive, pvalue=p_value.p_value, cindex=None, cancer_type=cancer_name, model_name='StandardAE-RSF', output_dir='result_new')
