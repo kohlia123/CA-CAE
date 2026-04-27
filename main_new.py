@@ -95,10 +95,7 @@ cp.compute_indexes(3) # Change as needed for each cancer type
 p_value, clusters = cp.LogRankp(3) # Adjust to match compute_indexes
 
 # 10. Generate Final Visualizations
-# Note: I've updated the model_name to 'StandardAE-RSF' so your PDF title reflects the change
-# and manually pointed the result save path (handled by utils.py, so ensure result_new exists)
 do_km_plot(survive, pvalue=p_value.p_value, cindex=None, cancer_type=cancer_name, model_name='StandardAE-RSF', output_dir='result_new')
 
-# Manually move file if your do_km_plot is hardcoded to save in 'result' 
-# (Most utils.py use the model_name to save, but let's be explicit in the console)
+
 print(f"Analysis for {cancer_name} complete. Results saved in 'result_new/' folder.")
