@@ -5,8 +5,10 @@ numpy==1.24.3
 # Machine Learning (CA-CAE Architecture)
 tensorflow==2.13.0
 scikit-learn==1.3.0
+joblib>=1.3.0
 
 # Survival Analysis & Statistics
+scikit-survival>=0.22.0
 lifelines==0.27.7
 scipy>=1.10.1
 
